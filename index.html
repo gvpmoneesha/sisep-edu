@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sisep Institute</title>
+
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+
+    <!--add to header-->
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+            <div class="navi-link" id="naviLink">
+                <i class="bi bi-x-square" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="classes.html">CLASSES</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="bi bi-list" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="topic">
+            <h1>Sisep Educational Institute</h1>
+
+            <p>Best Educational Institute in Sri Lanka</p>
+
+            <a href="about.html" class="btn">Visit us to know more</a>
+        </div>
+    </section>
+
+    <!--add to classes-->
+    <section class="class">
+        <h1>Classes we offer</h1>
+
+        <p>At Sisep Education Institute, we provide comprehensive educational programs for students from Grade 1 to
+            Grade 12.<br>
+            Our curriculum covers all subjects, ensuring a well-rounded education that prepares students for future
+            academic success and personal growth.</p>
+
+        <div class="row">
+            <div class="column">
+                <h3>Grade 1-5</h3>
+
+                <p>At Sisep Education Institute, our Grades 1 to 5 program provides a comprehensive and engaging
+                    curriculum that covers all essential subjects.
+                    Students will explore Mathematics, Science, English, and Social Studies, building a strong academic
+                    foundation.
+                    Additionally, our curriculum includes Art, Music, and Physical Education, ensuring a well-rounded
+                    education.
+                    Our dedicated teachers create a supportive environment that fosters a love of learning and
+                    encourages curiosity and growth.</p>
+            </div>
+
+            <div class="column">
+                <h3>Grade 6-11</h3>
+
+                <p>At Sisep Education Institute, our Grades 6 to 11 program offers a robust curriculum designed to
+                    challenge and inspire students.
+                    Core subjects such as Mathematics, Science, English, and Social Studies are complemented by elective
+                    courses in Art, Music, Technology, and Physical Education.
+                    Our experienced educators provide a stimulating learning environment that encourages critical
+                    thinking, creativity, and personal growth, preparing students for academic success and future
+                    endeavors.</p>
+            </div>
+
+            <div class="column">
+                <h3>Grade 12-13</h3>
+
+                <p>At Sisep Education Institute, our Grades 12 to 13 program is designed to prepare students for higher
+                    education and future careers.
+                    We offer advanced courses in Mathematics, Science, English, and Social Studies, along with
+                    specialized subjects such as Business Studies, Computer Science, and Humanities.
+                    Our curriculum also includes enriching electives in Art, Music, and Physical Education. With a focus
+                    on critical thinking, problem-solving, and in-depth knowledge, our experienced educators guide
+                    students towards academic excellence and personal development.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--facilities-->
+    <section class="facilities">
+        <h1>Our Laboratory Facilities</h1>
+
+        <p>We offer advanced Computer Science, Chemistry, and Physics labs.
+            Each lab is equipped with modern tools and technology.
+            Our facilities support hands-on learning and innovation.
+
+        </p>
+
+        <div class="row">
+            <div class="labColumn">
+                <img src="images/image4.jpg" alt="compter-lab">
+                <div class="layer">
+                    <h3>Computer Lab</h3>
+                </div>
+            </div>
+
+            <div class="labColumn">
+                <img src="images/image5.jpg" alt="chemistry-lab">
+                <div class="layer">
+                    <h3>Chemistry Lab</h3>
+                </div>
+            </div>
+
+            <div class="labColumn">
+                <img src="images/image6.jpg" alt="physics-lab">
+                <div class="layer">
+                    <h3>Physics Lab</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+    <section class="foot">
+        <h4>About Us</h4>
+
+        <p>At Sisep Education Institute offers quality education with expert teachers.<br>
+            Our supportive environment fosters student success.
+            Join us for academic excellence and growth.</p>
+
+        <div class="icon">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-linkedin"></i>
+        </div>
+
+        <p class="author">&copy; 2022 Sisep Education Institute</p>
+    </section>
+
+    <!--Add to javascript for Toggle menu-->
+    <script>
+        var naviLinks = document.getElementById("naviLink");
+
+        function showMenu() {
+            naviLinks.style.right = "0";
+        }
+        function hideMenu() {
+            naviLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>
